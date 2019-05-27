@@ -1,0 +1,15 @@
+<!--pages/wj/wj.wxml-->
+<view class='wj'>
+  <image src='../img/wjb.png'></image>
+  <!--书-->
+  <view class='flex' wx:for="{{list}}" wx:key="index">
+     <image src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+     <view class='text'>
+        
+          <text>{{item.title}}</text>
+        
+          <text class='min'>{{item.addr}}</text>
+     </view>
+     <text class='max'>{{item.num}}</text>
+  </view>
+</view>

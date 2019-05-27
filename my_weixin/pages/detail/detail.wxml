@@ -1,0 +1,65 @@
+<!--pages/detail/detail.wxml-->
+<view>
+<!--轮播图开始-->
+  <view class='slider'>
+    <swiper autoplay='true' interval='2000' circular='true' indicator-dots='true'>
+      <swiper-item>
+        <image src='../img/file1.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../img/file2.png'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+<!--轮播图结束-->
+<!--精选社区开始-->
+  <view class='font'>
+    精选社区
+    <view class='hl'>
+      <view class='divLine'></view>
+      你的小伙伴都在这里
+    </view>
+  </view>
+  <!--精选社区结束-->
+  <!--九宫格开始-->
+    <view class='nav'>
+      <view wx:for="{{navlist}}" wx:key="index" class='nav-item'>
+         <image src='{{item.img_url}}'></image>
+         <text class='min'>{{item.title}}</text>
+      </view>
+    </view>
+  <!--九宫格结束-->
+  <!--热门活动开始-->
+     <view class='font'>
+    热门活动
+    <view class='hl'>
+      <view class='divLine'></view>
+      相约户外走一走
+    </view>
+  </view>
+  <!--热门活动结束-->
+  <!--阴阳师的图片-->
+  <view class='yiny'>
+    <image src='../img/yinyang.jpg'></image>
+    <view>音乐剧《阴阳师-平安绘卷》深圳站</view>
+    <view class='tb'>
+      <image src='../img/file15.png'></image>
+      <text>
+        活动时间:2019-07-28 13:30-18:30
+      </text>
+    </view>
+    <view class='tb'>
+      <image src='../img/file16.png'></image>
+      <text>
+        活动地点:深圳保利剧院
+      </text>
+    </view>
+    <view class='tb'>
+      <image src='../img/file17.png'></image>
+      <text>
+        主办单位:暂无
+      </text>
+    </view>
+  </view>
+    
+</view>

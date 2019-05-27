@@ -1,0 +1,28 @@
+<!--pages/watch/watch.wxml-->
+<view class='watch'>
+  <!--头部开始-->
+  <view class='flex'>
+    <view class='t1'>
+        <image src='../img/t11.jpg'></image>
+    </view>
+    <view class='k'>
+      <text class='max'>食戟之灵</text>
+      <text class='min'>佐伯俊</text>
+      <image src='../img/k1.png'></image>
+    </view>
+  </view>
+   <view class='font'>
+家里经营餐馆的中学生幸平创真，以料理人的父亲为目标，每天持续磨练自己的厨艺。但是某一天，父亲却要送他进入厨艺学校“远月学园”就读...
+    </view>
+    </view>
+  <!--头部结束-->
+  <!--全部章节开始-->
+  <view class='all'>
+    <view class='first'>全部章节</view>
+    <view class='two' wx:for="{{list}}" wx:key="index" bindtap='man'>
+      <image src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+  <!--全部章节结束-->
+

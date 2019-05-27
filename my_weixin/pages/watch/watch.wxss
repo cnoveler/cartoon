@@ -1,0 +1,63 @@
+/* pages/watch/watch.wxss */
+/*全部watch*/
+.watch{
+   padding-left: 2%;
+}
+/*头部 */
+.flex{
+  display: flex;
+  justify-content:flex-start;
+ 
+}
+.t1 image{
+  width: 300rpx;
+  height:399rpx;
+}
+.max{
+  font-size: 30px;
+  font-weight: bold;
+}
+.k{
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.k image{
+  width: 130px;
+  height: 20px;
+  margin-top:85%; 
+}
+.font{
+ 
+  font-size: 16px;
+  color: #aaa;
+}
+/*全部章节*/
+.all{
+  margin-top: 1rem;
+}
+.all .first{
+  background: #eee;
+  padding:0.3rem ;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*章节部分*/
+.two{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.3rem ;
+  padding: 0.4rem;
+  
+}
+.two image{
+  width:150rpx;
+  height:150rpx;
+}
+.two view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2%;
+}

@@ -1,0 +1,138 @@
+<!--pages/home/home.wxml-->
+<view >
+  <!--轮播图-->
+  <view class='slider'>
+    <swiper autoplay='{{autoplay}}' interval='{{interval}}'circular="true" indicator-dots='{{indicatorDots}}'>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'  bindtap='shop'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--榜单(bd)-->
+  <view class='bd'>
+      <image src='../img/wj.png' bindtap='wj'></image>
+      <image src='../img/rq.png' bindtap='rq'></image>
+      <image src='../img/m1.png' bindtap='shop'></image>
+  </view>
+  <!--佳作推荐-->
+  <view class='jz'>
+    <view class='font'>
+      <text class='h3'>佳作推荐</text>
+      <text class='min' bindtap='about'>更多</text>
+    </view>
+    <!--图片文字部分-->
+    <view class='for' bindtap='jump1'>
+    <!--t1-->
+       <view > 
+          <view>
+            <image src='../img/t1.jpg'></image>
+          </view>
+          <view class='column'>
+            <text class='title'>食戟之灵</text>
+            <text class='detail'>做美食，开后宫，交基友！</text>
+          </view>
+        </view>
+        <!--t2-->
+       <view > 
+        <view>
+          <image src='../img/t2.jpg'></image>
+        </view>
+        <view class='column'>
+          <text class='title'>小木乃伊到我家</text>
+          <text class='detail'>埃及盗墓团已到位！</text>
+        </view>
+      </view>
+      </view>
+    <view class='for'bindtap='jump1'>
+    <!--t3-->
+       <view > 
+          <view>
+            <image src='../img/t3.jpg'></image>
+          </view>
+          <view class='column'>
+            <text class='title'>未来都市</text>
+            <text class='detail'>轻小说衍生动漫！</text>
+          </view>
+        </view>
+      <!--t4-->
+       <view > 
+          <view>
+            <image src='../img/t4.jpg'></image>
+          </view>
+          <view class='column'>
+            <text class='title'>元气缘结神</text>
+            <text class='detail'>找一个有尾巴得人！</text>
+          </view>
+        </view>
+    <!--t4结束-->
+    </view>
+    <!--for结束-->
+    </view>
+    <!--  佳作推荐结束-->
+    <!--最近更新开始-->
+    <view class='jz'>
+    <view class='font'>
+      <text class='h3'>最近更新</text>
+      <text class='min' bindtap='about'>更多</text>
+    </view>
+      <view class='for-book'bindtap='jump1'>
+          <view  wx:for="{{book}}" wx:key="index"> 
+          <view wx:if="{{index<3}}">
+            <image src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+          </view>
+          <view class='column'>
+            <text class='title' wx:if="{{index<3}}">{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--最近更新结束-->
+    <!--  日漫专区开始-->
+    <view class='jz'>
+    <view class='font'>
+      <text class='h3'>日漫专区</text>
+      <text class='min' bindtap='about'>更多</text>
+    </view>
+      <view class='for-book' bindtap='jump1'>
+          <view  wx:for="{{book}}" wx:key="index"> 
+          <view>
+            <image wx:if="{{index>2&index<6}}" src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+          </view>
+          <view class='column'>
+            <text class='title' wx:if="{{index>2&index<6}}">{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--日漫专区结束 -->
+    <!--专题开始-->
+      <view class='jz'>
+        <view class='font'>
+          <text class='h3'>专题</text>
+          <text class='min' bindtap='about'>更多</text>
+        </view>
+        <view class='z1' bindtap='search'>
+          <image src='../img/z1.png'></image>
+        </view>
+      </view>
+    <!-- 专题结束-->
+    <!--最近完结开始-->
+      <view class='jz'>
+    <view class='font'>
+      <text class='h3'>最近完结</text>
+      <text class='min' bindtap='about'>更多</text>
+    </view>
+      <view class='for-book' bindtap='jump1'>
+          <view  wx:for="{{book}}" wx:key="index"> 
+          <view>
+            <image wx:if="{{index>5}}" src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+          </view>
+          <view class='column'>
+            <text class='title' wx:if="{{index>5}}">{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--最近完结结束-->
+  </view>
+

@@ -1,0 +1,49 @@
+/* pages/about/about.wxss */
+.head{
+  background: #f34;
+  padding: 0.5rem 0;
+  color: #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+.all:hover,.live:hover,.adv:hover,.funny:hover{
+  color:#fff;
+}
+
+/*隐藏部分的图片*/
+.all{
+  margin-bottom: 2%;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.flex image{
+   width: 200rpx;
+  height: 260rpx;
+}
+/*标题和作者*/
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title .font{
+  font-size: 16px;
+  color: #aaa;
+}
+.text .title{
+  flex-direction: column;
+  display: flex;
+}
+.text .min{
+  font-size: 15px;
+  color: #aaa;
+}
+/*  点击加载*/
+.jz{
+  text-align: center;
+  font-size: 15px;
+  color: red;
+  margin: 1rem 0;
+}

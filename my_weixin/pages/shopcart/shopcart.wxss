@@ -1,0 +1,31 @@
+/* pages/shopcart/shopcart.wxss */
+.cart{
+  padding: 1rem;
+}
+.total{
+  display: flex;
+ font-weight:bold;
+}
+.shop{
+  padding: 0.5rem 0;
+}
+.list{
+  border-bottom:2px solid #ddd; 
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.shop image{
+  width: 80px;
+  height: 80px;
+  margin-top: 0.5rem;
+}
+/*增加减少*/
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left:0.3rem; 
+}

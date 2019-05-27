@@ -1,0 +1,71 @@
+/* pages/home/home.wxss */
+/*轮播图*/
+.slider,.slider swiper,.slider image{
+  height: 390rpx;
+  width: 100%;
+}
+/*榜单(bd)部分*/
+.bd{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.bd image{
+  width: 200rpx;
+  height: 110rpx;
+}
+/* 佳作推荐的图片文字部分 */
+.jz{
+  padding-bottom: 0.5rem;
+  border-bottom: 10px solid #eee;
+}
+.font{
+  padding:0.5rem 15rpx; 
+  display: flex;
+  justify-content: space-between;
+}
+.font .h3{
+  font-weight: bold;
+}
+.font .min{
+  color:#999;
+   font-size: 35rpx; 
+}
+.jz .for{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.for image{
+  width:374rpx;
+  height:207rpx;
+  margin-right: 1px;
+}
+ .column{
+  display: flex;
+  flex-direction: column;
+}
+ .title{
+  text-align: center;
+  font-size: 16px;
+}
+.for .detail{
+  color:#ddd;
+  text-align: center;
+  font-size: 15px;
+}
+/* 最近更新*/
+.for-book{
+  display: flex;
+  justify-content: space-between;
+}
+.for-book image{
+  width: 250rpx;
+  height: 333rpx;
+}
+/*专题*/
+.z1 image{
+  width: 750rpx;
+  height: 250rpx;
+}

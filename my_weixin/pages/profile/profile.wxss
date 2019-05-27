@@ -1,0 +1,30 @@
+/* pages/profile/profile.wxss */
+input{
+  padding: 0.2rem;
+  width: 70%;
+}
+.form{
+  border-bottom: 2px solid #ddd;
+  margin: 0.5rem 0;
+ }
+ .pro{
+   padding: 2rem;
+ }
+ button{
+   background: #f34;
+   color: #fff;
+ }
+ /*立即注册*/
+ .flex{
+   margin-top:2rem; 
+   display: flex;
+   justify-content: space-between;
+ }
+ /*立即注册*/
+ .ddd{
+   color: #aaa;
+ }
+ /*忘记密码*/
+ .pwd{
+   color: red;
+ }

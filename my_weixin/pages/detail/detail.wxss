@@ -1,0 +1,69 @@
+/* pages/detail/detail.wxss */
+.slider swiper-item{
+  width: 555px;
+  height: 200px;
+}
+swiper-item image{
+  width: 100%;
+  height:155px;
+}
+/*精选社区开始*/
+.font{
+  margin:1rem 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hl{
+  font-size:15px;
+  color: #ddd;
+}
+.hl .divLine{
+  background: #ddd;
+  width: 36%;
+  height:3px;
+  margin: auto;
+}
+/*九宫格*/
+.nav .nav-item image{
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-item{
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+   margin: 0.5rem 0;
+}
+.nav-item .min{
+  font-size: 15px;
+}
+/*阴阳师*/
+.yiny image{
+  width: 370px;
+  height:148px;
+}
+.yiny{
+  padding: 0 1%;
+}
+/*活动时间地点*/
+.tb image{
+  width: 30px;
+  height: 30px;
+}
+.tb{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.tb text{
+ margin-top:-6%; 
+ color: #ddd;
+}

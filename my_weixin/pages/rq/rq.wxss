@@ -1,0 +1,34 @@
+/* pages/rq/rq.wxss */
+/*头部*/
+.wj image{
+    width: 100%;
+    height: 150px;
+}
+/*中间部分*/
+.flex{
+  display: flex;
+   justify-content: space-between; 
+   
+
+    
+}
+.flex image{
+   width: 200rpx;
+  height: 260rpx;
+}
+.text{
+  display: flex;
+   flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+}
+.text .min{
+  font-size: 15px;
+}
+.max{
+  font-size:2rem;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,33 @@
+<!--pages/about/about.wxml-->
+<view>
+<!--头部-->
+  <view class='head' >
+     <text bindtap='all' class='all'>全部</text>
+     <text bindtap='live' class='live'>恋爱</text>
+     <text bindtap='adv' class='adv'>冒险</text>
+     <text bindtap='funny' class='funny'>搞笑</text>
+  </view>
+  <!-- 头部结束-->
+  <!--隐藏的部分-->
+     <view >
+        <view class='all'>
+  <!--书-->
+       <view class='flex' wx:for="{{list}}" wx:key="index">
+          <view>
+              <image src='http://127.0.0.1:3000/img/{{item.pic}}'></image>
+          </view>
+         
+       <view class='text'>
+          <view class='title'>
+            <text>{{item.title}}</text>
+            <text class='font'>{{item.addr}}</text>
+          </view>
+          <text class='min'>{{item.detail}}</text>
+     </view>
+  </view>
+</view>
+<view class='jz' bindtap='jz'>
+    点击加载
+  </view>
+     </view>
+</view>

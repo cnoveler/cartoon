@@ -1,0 +1,4 @@
+<!--pages/manhua/manhua.wxml-->
+<view>
+  <image src='../img/man1.jpg'></image>
+</view>

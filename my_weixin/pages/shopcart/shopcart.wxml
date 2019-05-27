@@ -1,0 +1,29 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view class='cart'>
+<!--全选-->
+  <view class='total'>
+     <view>
+        <text> 全选 </text>
+        <checkbox bindtap='selectAll' wx:value='selectAll'></checkbox>
+     </view>
+     <view style='margin-left:30%'>总价￥{{totalPrice}}</view>
+  </view>
+<!--购物车列表-->
+  <view class='shop'>
+     <view class='list' wx:for="{{list}}" wx:key="index">
+         <view style='padding:2rem 0'>
+            <checkbox wx:value='selected' bindtap='selectList' data-index='{{index}}'></checkbox>
+        </view>
+        <image src='http://127.0.0.1:3000/img/{{item.img}}'></image>
+        <view class='column'>
+          <text>{{item.title}}</text>
+          <view class='btn'>
+            <view style='color:red'>￥{{item.price}}</view>
+            <text bindtap='rec' data-index="{{index}}">-</text>
+            <text style='padding:0 0.5rem'>{{item.num}}</text>
+            <text bindtap='add' data-index="{{index}}">+</text>
+          </view>
+        </view>
+     </view>
+  </view>
+</view>

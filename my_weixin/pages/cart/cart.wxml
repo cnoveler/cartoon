@@ -1,0 +1,33 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+<!--头部照片-->
+  <image src='../img/c1.png'></image>
+  <!--优惠券照片-->
+  <view class='y1'>
+    <image src='../img/y1.png'></image>
+    <image src='../img/y1.png'></image>
+  </view>
+  <!--周边任你挑-->
+  <view class='font'>
+    周边任你挑
+    <view class='hl'>
+      <view class='divLine'></view>
+      海量周边，等你来拿
+    </view>
+  </view>
+  <!--商品部分-->
+  <view class='shop' wx:for="{{list}}" wx:key="index">
+    <image src='http://127.0.0.1:3000/img/{{item.img}}'></image>
+    <view>
+      {{item.title}}
+    </view>
+    <view style='color:#ff7f00'>￥{{item.price}}</view>
+  </view>
+  <view class='jz' bindtap='jz'>
+    点击加载
+  </view>
+  <!--购物车图片-->
+  <view class='fixed' bindtap='cart'>
+    <image src='../img/cart.png'></image>
+  </view>
+</view>
